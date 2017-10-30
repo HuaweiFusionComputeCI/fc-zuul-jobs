@@ -1,5 +1,6 @@
-- hosts: all
+- host: all
   become: yes
 
   roles:
     - copy-files-on-node
+ 

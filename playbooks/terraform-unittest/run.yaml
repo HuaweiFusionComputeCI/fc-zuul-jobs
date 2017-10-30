@@ -1,5 +1,0 @@
-- name: Run terraform unit test
-  hosts: all
-
-  roles:
-    - terraform-unittest

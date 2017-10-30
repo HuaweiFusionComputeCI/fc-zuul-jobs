@@ -1,0 +1,6 @@
+- host: all
+  become: yes
+
+  roles:
+    - fusioncompute-unittest
+ 
