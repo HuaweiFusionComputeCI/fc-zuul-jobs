@@ -13,8 +13,8 @@
 
 # FusionCoputeJobs
 - job:
-    name: FusionCompute-pep8
+    name: FusionComputeCI
     description: |
       Run FusionCompute PEP8 test
-    run: playbooks/fusioncompute-pep8/run
-    post-run: playbooks/fusioncompute-pep8/post
+    run: playbooks/fusioncomputeci/run
+    post-run: playbooks/fusioncomputeci/post
