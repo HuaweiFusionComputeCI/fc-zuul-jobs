@@ -3,10 +3,11 @@
     path: '{{ ansible_user_dir }}/workspace'
     state: directory
 
-- name: Run HuaweiFusionComputeCI 
+- name: Run FusionComputeCI tests
   shell: |
     cd /opt/stack/nova
-    echo success run pep8
+    sudo pip install -r test-requirements.txt
+    sudo tox -e pep8
   args:
     chdir: "{{ zuul_work_dir }}"
     executable: /bin/bash
