@@ -6,8 +6,8 @@
 - name: Run gophercloud unit test
   shell: |
     cd /opt/stack/nova
-    pip install -r test-requirements
-    tox -e pep8
+    sudo pip install -r test-requirements.txt
+    sudo tox -e pep8
   args:
     chdir: "{{ zuul_work_dir }}"
     executable: /bin/bash
