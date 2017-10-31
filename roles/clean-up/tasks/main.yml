@@ -1,0 +1,6 @@
+- name: Cleanup working Dir
+  shell: |
+    sudo rm -rf /home/zuul/src/review.openstack.org
+  args:
+    chdir: "{{ zuul_work_dir }}"
+    executable: /bin/bash
